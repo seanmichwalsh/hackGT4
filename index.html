@@ -22,7 +22,7 @@
 
             /* Modal Content */
             .modal-content {
-                background-color: #fefefe;
+                background-color: #D7F6F7;
                 margin: auto;
                 padding: 20px;
                 border: 1px solid #888;
@@ -61,7 +61,7 @@
             }
 
             input[name="mainBar"]:focus {
-                width: 20%;
+                width: 100%;
             }
         </style>
     </head>
@@ -69,7 +69,8 @@
     <body>
         <div id="header">
             <span id="title">
-                <h1>p.ups</h1>
+
+                <img src="P.up.png" class="logo" style="width:57px;height:62px;">
             </span>
 
             <div id="myModal" class="modal">
@@ -78,141 +79,85 @@
                 <div class="modal-content">
                     <span class="close">&times;</span>
                     <h1>Setup an Event!</h1>
-                    <form action="action_page.php" method="post">
-				<fieldset>
-					<legend>Event Details</legend>
-					Event Type:<br>
-					<input type="text" name="eventID" required><br>
-					Location:<br>
-					<input type="text" name="eventLocation" required><br>
-					Start Time:<br>
-					<select name="startTime" required>
-						<option value="12:00">12:00</option>
-						<option value="12:00">12:15</option>
-						<option value="12:00">12:30</option>
-						<option value="12:00">12:45</option>
-						<option value="12:00">1:00</option>
-						<option value="12:00">1:15</option>
-						<option value="12:00">1:30</option>
-						<option value="12:00">1:45</option>
-						<option value="12:00">2:00</option>
-						<option value="12:00">2:15</option>
-						<option value="12:00">2:30</option>
-						<option value="12:00">2:45</option>
-						<option value="12:00">3:00</option>
-						<option value="12:00">3:15</option>
-						<option value="12:00">3:30</option>
-						<option value="12:00">3:45</option>
-						<option value="12:00">4:00</option>
-						<option value="12:00">4:15</option>
-						<option value="12:00">4:30</option>
-						<option value="12:00">4:45</option>
-						<option value="12:00">5:00</option>
-						<option value="12:00">5:15</option>
-						<option value="12:00">5:30</option>
-						<option value="12:00">5:45</option>
-						<option value="12:00">6:00</option>
-						<option value="12:00">6:15</option>
-						<option value="12:00">6:30</option>
-						<option value="12:00">6:45</option>
-						<option value="12:00">7:00</option>
-						<option value="12:00">7:15</option>
-						<option value="12:00">7:30</option>
-						<option value="12:00">7:45</option>
-						<option value="12:00">8:00</option>
-						<option value="12:00">8:15</option>
-						<option value="12:00">8:30</option>
-						<option value="12:00">8:45</option>
-						<option value="12:00">9:00</option>
-						<option value="12:00">9:15</option>
-						<option value="12:00">9:30</option>
-						<option value="12:00">9:45</option>
-						<option value="12:00">10:00</option>
-						<option value="12:00">10:15</option>
-						<option value="12:00">10:30</option>
-						<option value="12:00">10:45</option>
-						<option value="12:00">11:00</option>
-						<option value="12:00">11:15</option>
-						<option value="12:00">11:30</option>
-						<option value="12:00">11:45</option>
-					</select>
-					<select name="startAM/PM" required>
-						<option value="am">AM</option>
-						<option value="pm">PM</option>
-					</select><br>
-                    End Time:<br>
-                    <select name="endTime" required>
-						<option value="12:00">12:00</option>
-						<option value="12:00">12:15</option>
-						<option value="12:00">12:30</option>
-						<option value="12:00">12:45</option>
-						<option value="12:00">1:00</option>
-						<option value="12:00">1:15</option>
-						<option value="12:00">1:30</option>
-						<option value="12:00">1:45</option>
-						<option value="12:00">2:00</option>
-						<option value="12:00">2:15</option>
-						<option value="12:00">2:30</option>
-						<option value="12:00">2:45</option>
-						<option value="12:00">3:00</option>
-						<option value="12:00">3:15</option>
-						<option value="12:00">3:30</option>
-						<option value="12:00">3:45</option>
-						<option value="12:00">4:00</option>
-						<option value="12:00">4:15</option>
-						<option value="12:00">4:30</option>
-						<option value="12:00">4:45</option>
-						<option value="12:00">5:00</option>
-						<option value="12:00">5:15</option>
-						<option value="12:00">5:30</option>
-						<option value="12:00">5:45</option>
-						<option value="12:00">6:00</option>
-						<option value="12:00">6:15</option>
-						<option value="12:00">6:30</option>
-						<option value="12:00">6:45</option>
-						<option value="12:00">7:00</option>
-						<option value="12:00">7:15</option>
-						<option value="12:00">7:30</option>
-						<option value="12:00">7:45</option>
-						<option value="12:00">8:00</option>
-						<option value="12:00">8:15</option>
-						<option value="12:00">8:30</option>
-						<option value="12:00">8:45</option>
-						<option value="12:00">9:00</option>
-						<option value="12:00">9:15</option>
-						<option value="12:00">9:30</option>
-						<option value="12:00">9:45</option>
-						<option value="12:00">10:00</option>
-						<option value="12:00">10:15</option>
-						<option value="12:00">10:30</option>
-						<option value="12:00">10:45</option>
-						<option value="12:00">11:00</option>
-						<option value="12:00">11:15</option>
-						<option value="12:00">11:30</option>
-						<option value="12:00">11:45</option>
-					</select>
-					<select name="endAM/PM" required>
-						<option value="am">AM</option>
-						<option value="pm">PM</option>
-					</select><br>
-					Max Number of Participants:<br>
-					<input type="number" min="1" name="eventCapacity"    required><br><br>
+                    <form action="/action_page.php" method="post">
+                <fieldset>
+                    <legend>Event Info</legend>
+                    Event Type:<br>
+                    <input type="text" name="eventtype" required><br>
+                    Location:<br>
+                    <input type="text" name="location" required><br>
+                    Time:<br>
+                    <select name="time" required>
+                        <option value="12:00">12:00</option>
+                        <option value="12:00">12:15</option>
+                        <option value="12:00">12:30</option>
+                        <option value="12:00">12:45</option>
+                        <option value="12:00">1:00</option>
+                        <option value="12:00">1:15</option>
+                        <option value="12:00">1:30</option>
+                        <option value="12:00">1:45</option>
+                        <option value="12:00">2:00</option>
+                        <option value="12:00">2:15</option>
+                        <option value="12:00">2:30</option>
+                        <option value="12:00">2:45</option>
+                        <option value="12:00">3:00</option>
+                        <option value="12:00">3:15</option>
+                        <option value="12:00">3:30</option>
+                        <option value="12:00">3:45</option>
+                        <option value="12:00">4:00</option>
+                        <option value="12:00">4:15</option>
+                        <option value="12:00">4:30</option>
+                        <option value="12:00">4:45</option>
+                        <option value="12:00">5:00</option>
+                        <option value="12:00">5:15</option>
+                        <option value="12:00">5:30</option>
+                        <option value="12:00">5:45</option>
+                        <option value="12:00">6:00</option>
+                        <option value="12:00">6:15</option>
+                        <option value="12:00">6:30</option>
+                        <option value="12:00">6:45</option>
+                        <option value="12:00">7:00</option>
+                        <option value="12:00">7:15</option>
+                        <option value="12:00">7:30</option>
+                        <option value="12:00">7:45</option>
+                        <option value="12:00">8:00</option>
+                        <option value="12:00">8:15</option>
+                        <option value="12:00">8:30</option>
+                        <option value="12:00">8:45</option>
+                        <option value="12:00">9:00</option>
+                        <option value="12:00">9:15</option>
+                        <option value="12:00">9:30</option>
+                        <option value="12:00">9:45</option>
+                        <option value="12:00">10:00</option>
+                        <option value="12:00">10:15</option>
+                        <option value="12:00">10:30</option>
+                        <option value="12:00">10:45</option>
+                        <option value="12:00">11:00</option>
+                        <option value="12:00">11:15</option>
+                        <option value="12:00">11:30</option>
+                        <option value="12:00">11:45</option>
+                    </select>
+                    <select name="am/pm" required>
+                        <option value="am">AM</option>
+                        <option value="pm">PM</option>
+                    </select><br>
+                    Max Number of Participants:<br>
+                    <input type="number" min="1" name="maxparticipants"    required><br>
 
-					First Name:<br>
-					<input type="text" name="firstName" required><br>
-					Last Name:<br>
-					<input type="text" name="lastName" required><br>
-                    Email:<br>
-                    <input type="email" name="email" required><br>
-                    Phone Number:<br>
-                    <input type="tel" name="phoneNumber"><br><br>
-					<input type="submit" value="Submit">
-                    <input type="reset" value="Reset">
-				</fieldset>
-			</form>
+                    <legend>Sign-Up</legend>
+                    First Name:<br>
+                    <input type="text" name="firstname" required><br>
+                    Last Name:<br>
+                    <input type="text" name="lastname" required><br><br>
+                    <input type="submit" value="Submit">
+                </fieldset>
+            </form>
                 </div>
             </div>
+        </div>
+        <div id="header2">
             <span>
+
             <button id="create" onclick="askDetails()">Create an Event</button>
                 <script>
                     // Get the modal
@@ -244,17 +189,14 @@
             </span>
             <span id="searchBarMain">
                 <form>
-                  <input type="text" name="mainBar" placeholder="Search..">
+                  <input type="text" name="mainBar" placeholder="Search...">
                 </form>
             </span>
 
         </div>
 
-
-
-
-        <div id="grid">
-        <div id="container">
+<div id="grid">
+    <div id="container">
         <div id="box">
             <!--Transparent button to click to join-->
             <button id="button" id="join" onclick="joinFunc()" class="button">BOX 1</button>
@@ -288,9 +230,6 @@
             <button id="button" id="join" onclick="joinFunc()" class="button">BOX 9</button>
         </div>
     </div>
-
-    <!-- Trigger/Open The Modal
-    <button id="join" onclick="joinFunc()">Join</button> -->
-
+</div>
     </body>
   </html>
