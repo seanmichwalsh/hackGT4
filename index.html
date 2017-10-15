@@ -24,10 +24,10 @@
             .modal-content {
                 background-color: #D7F6F7;
                 margin: auto;
-                padding: 20px;
-                border: 1px solid #888;
-                width: 50%;
-                height: 70%;
+                padding: 5px 15px 15px 20px;
+                width: 30%;
+                height: 65%;
+                color: #162955;
             }
 
             /* The Close Button */
@@ -40,7 +40,7 @@
 
             .close:hover,
             .close:focus {
-                color: #000;
+                color: #FFAC3C;
                 text-decoration: none;
                 cursor: pointer;
             }
@@ -48,7 +48,7 @@
             input[name="mainBar"] {
                 width: 170px;
                 box-sizing: border-box;
-                border: 2px solid #ccc;
+                border: 2px solid #27E5FF;
                 border-radius: 4px;
                 font-size: 16px;
                 background-color: white;
@@ -69,8 +69,9 @@
     <body>
         <div id="header">
             <span id="title">
-
+                <a href="javascript:window.location.href=window.location.href">
                 <img src="P.up.png" class="logo" style="width:57px;height:62px;">
+            </a>
             </span>
 
             <div id="myModal" class="modal">
@@ -80,12 +81,12 @@
                     <span class="close">&times;</span>
                     <h1>Setup an Event!</h1>
                     <form action="/action_page.php" method="post">
-                <fieldset>
-                    <legend>Event Info</legend>
+                <!--<fieldset>
+                    <!--<legend>Event Info</legend>-->
                     Event Type:<br>
-                    <input type="text" name="eventtype" required><br>
+                    <input id="textboxes" type="text" name="eventtype" required><br>
                     Location:<br>
-                    <input type="text" name="location" required><br>
+                    <input id="textboxes" type="text" name="location" required><br>
                     Time:<br>
                     <select name="time" required>
                         <option value="12:00">12:00</option>
@@ -142,15 +143,16 @@
                         <option value="pm">PM</option>
                     </select><br>
                     Max Number of Participants:<br>
-                    <input type="number" min="1" name="maxparticipants"    required><br>
+                    <input id="textboxes" type="number" min="1" name="maxparticipants" required><br>
 
-                    <legend>Sign-Up</legend>
+                    <!--<legend>Sign-Up</legend>-->
                     First Name:<br>
-                    <input type="text" name="firstname" required><br>
+                    <input id="textboxes" type="text" name="firstname" required><br>
                     Last Name:<br>
-                    <input type="text" name="lastname" required><br><br>
+                    <input id="textboxes" type="text" name="lastname" required><br><br>
                     <input type="submit" value="Submit">
-                </fieldset>
+                    <input type="reset" value="Reset">
+                <!--</fieldset>-->
             </form>
                 </div>
             </div>
@@ -199,35 +201,86 @@
     <div id="container">
         <div id="box">
             <!--Transparent button to click to join-->
-            <button id="button" id="join" onclick="joinFunc()" class="button">BOX 1</button>
+            <button id="button" id="join" class="football button" onclick="joinFunc()">
+                Football<br>
+                Stamps Field<br>
+                5:00 PM<br>
+                3/12 needed<br>
+                Joe Smith
+            </button>
         </div>
         <div id="box">
-            <button id="button" id="join" onclick="joinFunc()" class="button">BOX 2</button>
+            <button id="button" id="join" class="ultimate button" onclick="joinFunc()">
+                Ultimate<br>
+                Burger Bowl<br>
+                9:00 PM<br>
+                4/7 needed<br>
+                Ethan Lee
+            </button>
         </div>
         <div id="box">
-            <button id="button" id="join" onclick="joinFunc()" class="button">BOX 3</button>
+            <button id="button" id="join" class="soccer button" onclick="joinFunc()">
+                Soccer<br>
+                North Ave Fields<br>
+                10:00 AM<br>
+                8/10 needed<br>
+                Cristiano Ronaldo
+            </button>
         </div>
     </div>
     <div id="container">
         <div id="box">
-            <button id="button" id="join" onclick="joinFunc()" class="button">BOX 4</button>
+            <button id="button" id="join" class="bball button" onclick="joinFunc()">
+                Basketball<br>
+                CRC Basketball Courts<br>
+                2:00 PM<br>
+                4/5 needed<br>
+                Lebron James</button>
         </div>
         <div id="box">
-            <button id="button" id="join" onclick="joinFunc()" class="button">BOX 5</button>
+            <button id="button" id="join" class="soccer button" onclick="joinFunc()">
+                Soccer<br>
+                SAC Field<br>
+                11:00 PM<br>
+                6/10 needed<br>
+                Lionel Messi
+            </button>
         </div>
         <div id="box">
-            <button id="button" id="join" onclick="joinFunc()" class="button">BOX 6</button>
+             <button id="button" id="join" class="vball button" onclick="joinFunc()">
+                Beach Volleyball<br>
+                Frat Row Parking Lot Courts<br>
+                9:15 PM<br>
+                2/6 needed<br>
+                Bob Dylan</button>
         </div>
     </div>
     <div id="container">
         <div id="box">
-            <button id="button" id="join" onclick="joinFunc()" class="button">BOX 7</button>
+            <button id="button" id="join" class="ultimate button" onclick="joinFunc()">
+                Ultimate<br>
+                Tech Green<br>
+                9:00 AM<br>
+                2/7 needed<br>
+                Alex Morgan</button>
         </div>
         <div id="box">
-            <button id="button" id="join" onclick="joinFunc()" class="button">BOX 8</button>
+             <button id="button" id="join" class="football button" onclick="joinFunc()">
+                Flag Football<br>
+                SAC Field<br>
+                8:00 PM<br>
+                11/12 needed<br>
+                Tom Brady
+            </button>
         </div>
         <div id="box">
-            <button id="button" id="join" onclick="joinFunc()" class="button">BOX 9</button>
+            <button id="button" id="join" class="cornhole button" onclick="joinFunc()">
+                Cornhole<br>
+                Outside CRC<br>
+                1:30 PM<br>
+                2/4 needed<br>
+                Jennifer Lopez
+            </button>
         </div>
     </div>
 </div>
