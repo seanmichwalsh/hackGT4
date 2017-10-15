@@ -45,7 +45,7 @@
                 cursor: pointer;
             }
 
-            input[type=text] {
+            input[name="mainBar"] {
                 width: 170px;
                 box-sizing: border-box;
                 border: 2px solid #ccc;
@@ -60,7 +60,7 @@
                 transition: width 0.4s ease-in-out;
             }
 
-            input[type=text]:focus {
+            input[name="mainBar"]:focus {
                 width: 20%;
             }
         </style>
@@ -81,12 +81,12 @@
                     <form action="/action_page.php" method="post">
 				<fieldset>
 					<legend>Event Info</legend>
-					Event type:<br>
-					<input type="text" name="eventtype"><br>
+					Event Type:<br>
+					<input type="text" name="eventtype" required><br>
 					Location:<br>
-					<input type="text" name="location"><br>
+					<input type="text" name="location" required><br>
 					Time:<br>
-					<select name="time">
+					<select name="time" required>
 						<option value="12:00">12:00</option>
 						<option value="12:00">12:15</option>
 						<option value="12:00">12:30</option>
@@ -136,18 +136,18 @@
 						<option value="12:00">11:30</option>
 						<option value="12:00">11:45</option>
 					</select>
-					<select name="am/pm">
+					<select name="am/pm" required>
 						<option value="am">AM</option>
 						<option value="pm">PM</option>
 					</select><br>
 					Max Number of Participants:<br>
-					<input type="number" name="maxparticipants"><br>
+					<input type="number" min="1" name="maxparticipants"    required><br>
 
 					<legend>Sign-Up</legend>
-					First name:<br>
-					<input type="text" name="firstname"><br>
-					Last name:<br>
-					<input type="text" name="lastname"><br><br>
+					First Name:<br>
+					<input type="text" name="firstname" required><br>
+					Last Name:<br>
+					<input type="text" name="lastname" required><br><br>
 					<input type="submit" value="Submit">
 				</fieldset>
 			</form>
@@ -185,7 +185,7 @@
             </span>
             <span id="searchBarMain">
                 <form>
-                  <input type="text" name="search" placeholder="Search..">
+                  <input type="text" name="mainBar" placeholder="Search..">
                 </form>
             </span>
 
